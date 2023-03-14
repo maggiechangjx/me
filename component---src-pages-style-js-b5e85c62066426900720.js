@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[201],{9315:function(o,s,e){e.r(s);s.default={color:"salmon",fontFamily:"-apple-system, Roboto, sans-serif, serif"}}}]);
+//# sourceMappingURL=component---src-pages-style-js-b5e85c62066426900720.js.map
