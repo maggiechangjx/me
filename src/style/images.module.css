@@ -1,0 +1,38 @@
+.v_img {
+   /*height: 90vh;*/
+   /*width: auto;*/
+   /*width: 80%;*/
+   margin-top: 3px;
+   margin-bottom: 3px;
+   /*margin-left: auto;
+   margin-right: auto;*/
+}
+
+.h_img {
+   width: 95%;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.performance_v_img {
+   width: 49.2%;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   margin-left: 3px;
+   margin-right: 3px;
+}
+
+.performance_v_img_org {
+   max-width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.cyberfem_poster {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+}

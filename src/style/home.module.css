@@ -1,0 +1,21 @@
+.page {
+  background-color: rgb(222, 255, 222);
+}
+
+.title {
+  font-family: "-apple-system, Roboto, sans-serif, serif";
+  color: salmon;
+}
+
+.half_size {
+  transform: scale(0.5);
+}
+
+/*
+const pageStyle = {
+   color: "salmon",
+   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+ }
+ export default pageStyle
+ */
+

@@ -1,0 +1,15 @@
+.video_frame {
+   /*border-style: solid;
+   border-color: blueviolet;*/
+   width: 75vw;
+   height: 75vh;
+   position: relative;
+   padding: 0px;
+   margin: 0px;
+}
+
+iframe {
+   height: 100%;
+   width: 100%;
+}
+

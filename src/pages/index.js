@@ -1,176 +1,269 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+// components
+import Nav from "../components/nav"
+import Content from "../components/content"
+import Layout from "../components/layout"
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+// styles
+// import { pageStyle } from "./style.js"
+import { 
+  page,
+  title,} from '../style/home.module.css'
+import { index_gif_container } from '../style/gif.module.css'
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+// media
+import b1 from '../images/index/b1.gif'
+import b2 from '../images/index/b2.gif'
+import b3 from '../images/index/b3.gif'
+import b4 from '../images/index/b4.gif'
+import b5 from '../images/index/b5.gif'
+import b6 from '../images/index/b6.gif'
+import b7 from '../images/index/b7.gif'
+import b8 from '../images/index/b8.gif'
+import b9 from '../images/index/b9.gif'
+import b10 from '../images/index/b10.gif'
+import b11 from '../images/index/b11.gif'
+import b12 from '../images/index/b12.png'
+import b13 from '../images/index/b13.gif'
+import b14 from '../images/index/b14.gif'
+import b15 from '../images/index/b15.gif'
+import b16 from '../images/index/b16.gif'
+import b17 from '../images/index/b17.gif'
+import b18 from '../images/index/b18.gif'
+import b19 from '../images/index/b19.gif'
+import b20 from '../images/index/b20.gif'
+import b21 from '../images/index/b21.gif'
+import b22 from '../images/index/b22.gif'
+import b23 from '../images/index/b23.gif'
+import b24 from '../images/index/b24.gif'
+import b25 from '../images/index/b25.png'
+import b26 from '../images/index/b26.gif'
+import b27 from '../images/index/b27.gif'
+import b28 from '../images/index/b28.gif'
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+import d1 from '../images/index/d1.gif'
+import d2 from '../images/index/d2.gif'
+import d3 from '../images/index/d3.gif'
+import d4 from '../images/index/d4.png'
+import d5 from '../images/index/d5.png'
+import d6 from '../images/index/d6.png'
+import d7 from '../images/index/d7.png'
+import d8 from '../images/index/d8.png'
+import d9 from '../images/index/d9.png'
+import d10 from '../images/index/d10.png'
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
+import e1 from '../images/index/e1.gif'
+import e2 from '../images/index/e2.gif'
+import em1 from '../images/index/em1.gif'
+import em2 from '../images/index/em2.gif'
+import em3 from '../images/index/em3.gif'
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
+import l1 from '../images/index/l1.gif'
+import l2 from '../images/index/l2.gif'
+import l3 from '../images/index/l3.gif'
+import l4 from '../images/index/l4.gif'
+import l5 from '../images/index/l5.gif'
+import l6 from '../images/index/l6.gif'
+import l7 from '../images/index/l7.gif'
+import l8 from '../images/index/l8.gif'
+import l9 from '../images/index/l9.png'
+import l10 from '../images/index/l10.png'
+import l11 from '../images/index/l11.png'
+import l12 from '../images/index/l12.png'
+import l13 from '../images/index/l13.png'
+import l14 from '../images/index/l14.png'
+import l15 from '../images/index/l15.gif'
+import l16 from '../images/index/l16.gif'
+import l17 from '../images/index/l17.gif'
+import l18 from '../images/index/l18.gif'
+import l19 from '../images/index/l19.gif'
+import l20 from '../images/index/l20.gif'
+import l21 from '../images/index/l21.png'
+import l22 from '../images/index/l22.png'
+import l23 from '../images/index/l23.png'
+import l24 from '../images/index/l24.png'
+import l25 from '../images/index/l25.png'
+import l26 from '../images/index/l26.png'
+import l27 from '../images/index/l27.png'
+import l28 from '../images/index/l28.png'
+import l29 from '../images/index/l29.png'
+import l30 from '../images/index/l30.png'
+import l31 from '../images/index/l31.png'
+import l32 from '../images/index/l32.png'
+import l33 from '../images/index/l33.png'
+import l34 from '../images/index/l34.png'
+import l35 from '../images/index/l35.png'
+import l36 from '../images/index/l36.png'
+import l37 from '../images/index/l37.png'
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+import m1 from '../images/index/m1.png'
+import m2 from '../images/index/m2.png'
+import m3 from '../images/index/m3.png'
+import m4 from '../images/index/m4.png'
+import m5 from '../images/index/m5.png'
+import m6 from '../images/index/m6.png'
 
-const IndexPage = () => {
+import p1 from '../images/index/p1.png'
+import p2 from '../images/index/p2.png'
+import p3 from '../images/index/p3.png'
+import p4 from '../images/index/p4.png'
+import p5 from '../images/index/p5.png'
+import p6 from '../images/index/p6.png'
+import p7 from '../images/index/p7.png'
+import p8 from '../images/index/p8.png'
+import p9 from '../images/index/p9.png'
+import p10 from '../images/index/p10.png'
+import p11 from '../images/index/p11.png'
+
+import pe1 from '../images/index/pe1.gif'
+import pe2 from '../images/index/pe2.gif'
+import pe3 from '../images/index/pe3.gif'
+import pe4 from '../images/index/pe4.gif'
+import pe5 from '../images/index/pe5.gif'
+
+import w1 from '../images/index/w1.png'
+import w2 from '../images/index/w2.png'
+import w3 from '../images/index/w3.png'
+import w4 from '../images/index/w4.png'
+import w5 from '../images/index/w5.png'
+import w7 from '../images/index/w7.png'
+import w8 from '../images/index/w8.png'
+import w9 from '../images/index/w9.png'
+import w10 from '../images/index/w10.png'
+import w11 from '../images/index/w11.png'
+import w12 from '../images/index/w12.png'
+import w13 from '../images/index/w13.png'
+import w14 from '../images/index/w14.png'
+
+import w1g from '../images/index/w1.gif'
+
+const home = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
+    <Layout id={"home"} title={"homeT"}> 
+      <div className={index_gif_container}>
+
+        <img src={l36} alt="sneak peek"/>
+        <img src={p3} alt="gif"/>
+        <img src={b1} alt="gif"/>
+        <img src={d8} alt="sneak peek"/>
+        <img src={l21} alt="sneak peek"/>
+        <img src={b25} alt="sneak peek"/>
+        <img src={l31} alt="sneak peek"/>
+        <img src={b6} alt="gif"/>
+        <img src={l15} alt="sneak peek"/>
+        <img src={m6} alt="sneak peek"/>
+        <img src={em1} alt="gif"/>
+        <img src={p11} alt="gif"/>
+        <img src={b9} alt="gif"/>
+        <img src={w1} alt="gif"/>
+        <img src={l9} alt="sneak peek"/>
+        <img src={b11} alt="gif"/>
+        <img src={d1} alt="gif"/>
+        <img src={l26} alt="sneak peek"/>
+        <img src={b2} alt="gif"/>
+        <img src={l37} alt="sneak peek"/>
+        <img src={w4} alt="gif"/>
+        <img src={d3} alt="gif"/>
+        <img src={l33} alt="sneak peek"/>
+        <img src={e1} alt="gif"/>
+        <img src={w10} alt="sneak peek"/>
+        <img src={p10} alt="gif"/>
+        <img src={b7} alt="gif"/>
+        <img src={l1} alt="gif"/>
+        <img src={b4} alt="gif"/>
+        <img src={m4} alt="sneak peek"/>
+        <img src={l2} alt="gif"/>
+        <img src={d2} alt="gif"/>
+        <img src={w5} alt="gif"/>
+        <img src={b12} alt="sneak peek"/>
+        <img src={l4} alt="gif"/>
+        <img src={m5} alt="sneak peek"/>
+        <img src={p1} alt="gif"/>
+        <img src={l5} alt="gif"/>
+        <img src={b10} alt="gif"/>
+        <img src={l23} alt="sneak peek"/>
+        <img src={pe1} alt="gif"/>
+        <img src={l16} alt="sneak peek"/>
+        <img src={w8} alt="sneak peek"/>
+        <img src={l13} alt="sneak peek"/>
+        <img src={b20} alt="sneak peek"/>
+        <img src={w1g} alt="gif"/>
+        <img src={l35} alt="sneak peek"/>
+        <img src={b16} alt="sneak peek"/>
+        <img src={p4} alt="gif"/>
+        <img src={l6} alt="gif"/>
+        <img src={b26} alt="sneak peek"/>
+        <img src={l22} alt="sneak peek"/>
+        <img src={b8} alt="gif"/>
+        <img src={w2} alt="gif"/>
+        <img src={p2} alt="gif"/>
+        <img src={b28} alt="sneak peek"/>
+        <img src={l12} alt="sneak peek"/>
+        <img src={p6} alt="gif"/>
+        <img src={e2} alt="gif"/>
+        <img src={l29} alt="sneak peek"/>
+        <img src={b18} alt="sneak peek"/>
+        <img src={l32} alt="sneak peek"/>
+        <img src={p7} alt="gif"/>
+        <img src={em3} alt="gif"/>
+        <img src={p8} alt="gif"/>
+        <img src={l7} alt="gif"/>
+        <img src={b21} alt="sneak peek"/>
+        <img src={d9} alt="sneak peek"/>
+        <img src={l25} alt="sneak peek"/>
+        <img src={m1} alt="sneak peek"/>
+        <img src={b22} alt="sneak peek"/>
+        <img src={d5} alt="sneak peek"/>
+        <img src={l18} alt="sneak peek"/>
+        <img src={pe2} alt="gif"/>
+        <img src={b23} alt="sneak peek"/>
+        <img src={l8} alt="gif"/>
+        <img src={w9} alt="sneak peek"/>
+        <img src={p5} alt="gif"/>
+        <img src={l19} alt="sneak peek"/>
+        <img src={d6} alt="sneak peek"/>
+        <img src={b17} alt="sneak peek"/>
+        <img src={l24} alt="sneak peek"/>
+        <img src={w7} alt="gif"/>
+        <img src={pe5} alt="sneak peek"/>
+        <img src={b15} alt="sneak peek"/>
+        <img src={l34} alt="sneak peek"/>
+        <img src={p9} alt="gif"/>
+        <img src={d7} alt="sneak peek"/>
+        <img src={b3} alt="gif"/>
+        <img src={l3} alt="gif"/>
+        <img src={d10} alt="sneak peek"/>
+        <img src={b24} alt="sneak peek"/> 
+        <img src={l10} alt="sneak peek"/>
+        <img src={w11} alt="sneak peek"/>
+        <img src={pe4} alt="sneak peek"/>
+        <img src={b27} alt="sneak peek"/>
+        <img src={l11} alt="sneak peek"/>
+        <img src={b13} alt="sneak peek"/>
+        <img src={w3} alt="gif"/>
+        <img src={l14} alt="sneak peek"/>
+        <img src={b5} alt="gif"/>
+        <img src={l17} alt="sneak peek"/>
+        <img src={em2} alt="gif"/>
+        <img src={b14} alt="sneak peek"/>
+        <img src={pe3} alt="sneak peek"/>
+        <img src={m2} alt="sneak peek"/>
+        <img src={l20} alt="sneak peek"/>
+        <img src={l27} alt="sneak peek"/>
+        <img src={d4} alt="sneak peek"/>
+        <img src={l28} alt="sneak peek"/>
+        <img src={b19} alt="sneak peek"/>
+        <img src={l30} alt="sneak peek"/>
+        
+
+
+      </div>
+    </Layout>
   )
 }
 
-export default IndexPage
+export default home
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Maggie Jiaxu Chang</title>

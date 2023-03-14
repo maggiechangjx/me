@@ -1,0 +1,31 @@
+body {
+   margin: 0px;
+   background-color:rgb(238, 239, 249);
+}
+
+.base_layout {
+   display: flex;
+   flex-direction: row;
+}
+
+.content_layout {
+   /*border: solid;
+   border-color: rgb(255, 140, 125);*/
+   height: 100%;
+   margin: 10px;
+   /*width: 100%;  */
+   margin-left: 24.5vw;
+   grid-column-start: 2;
+   grid-column-end: 3;
+   /*display: flex;*/
+   /*flex-direction: column;*/
+   /*flex-wrap: wrap;*/
+}
+
+.nav_layout {
+   grid-column-start: 1;
+   grid-column-end: 2;
+}
+
+
+

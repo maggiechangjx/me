@@ -1,0 +1,41 @@
+.localhost_style {
+   width: 66%;
+   margin-left: 17%;
+   margin-bottom: 5px;
+}
+
+.gif_container {
+   display: flex;
+   width: 99.5%;
+   max-width: 100%;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 20px;
+   margin-bottom: 5px;
+   gap: 10px;
+}
+
+.index_gif_container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+.bp {
+   width: 49.5%;
+   /*margin-left: 17%;*/
+   /*margin-bottom: 5px;*/
+}
+
+@media (max-width: 1024px) {
+   .bp {
+      width: 100%;
+   }
+}
+
+.full_gif {
+   width: 100%;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
