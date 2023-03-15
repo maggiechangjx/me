@@ -228,11 +228,11 @@ const home = () => {
         <img src={l24} alt="sneak peek"/>
         <img src={w7} alt="gif"/>
         <img src={pe5} alt="sneak peek"/>
-        <img src={b15} alt="sneak peek"/>
+        {/*<img src={b15} alt="sneak peek"/>*/}
         <img src={l34} alt="sneak peek"/>
         <img src={p9} alt="gif"/>
         <img src={d7} alt="sneak peek"/>
-        <img src={b3} alt="gif"/>
+        {/*<img src={b3} alt="gif"/>*/}
         <img src={l3} alt="gif"/>
         <img src={d10} alt="sneak peek"/>
         <img src={b24} alt="sneak peek"/> 
