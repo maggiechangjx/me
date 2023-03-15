@@ -1,9 +1,5 @@
-
-<a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-  <h1 align="center">
-    Gatsby Minimal Starter
-  </h1>
-</a>
+This is the code for my own portfolio, currently hosted on Github pages. Below
+are notes from Gatsby that I keep as reminder for myself.
 
 
 ## 🚀 Quick start
@@ -46,3 +42,11 @@
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 [<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+
+## Deploy to Github pages
+Push changes to Github, then run in command line: 
+```
+npm run deploy
+```
+More info <a href="https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/#general-instructions"  target='blank'>here</a>
