@@ -22,6 +22,11 @@ are notes from Gatsby that I keep as reminder for myself.
     npm run develop
     ```
 
+    For later development, type 
+    ```shell
+    gatsby develop
+    ```
+
 3.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
@@ -46,7 +51,7 @@ Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 ## Deploy to Github pages
 Push changes to Github, then run in command line: 
-```
+```shell
 npm run deploy
 ```
 More info <a href="https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/#general-instructions"  target='blank'>here</a>

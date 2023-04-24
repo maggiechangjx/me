@@ -111,14 +111,17 @@ const Nav = ({id, title}) => {
                   room, attached with sensors</p>
                   <p className={year}>2022</p>
                   <p className={description}>
-                  localhost:8000 is a website hosted on a local Raspberry Pi and 
-                  attached to environmental sensors that detects the 
+                  localhost:8000 is a website hosted on a local Raspberry Pi that's 
+                  attached to environmental sensors detecting the 
                   temperature, brightness, and loudness around the server. 
                   The website's digital environment and accessible content 
                   flickers to the changes in the physical enviroment around 
                   its server. <br/><br/>
-                  (The Raspberry Pi host and I are currently travelling in the 
-                  AFK world. The website will be back on once we find some settlement!)
+                  The Raspberry Pi server travels with me, so our locations will 
+                  change from time to time. The website might also be down if 
+                  I didn't take care of it properly. At the moment, the website 
+                  can be accessed at 
+                  <a href='http://192.168.1.152/' target='blank'> 192.168.1.152</a>. 
                   </p>
                </div>
             </li>
