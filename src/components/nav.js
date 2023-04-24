@@ -45,7 +45,7 @@ const Nav = ({id, title}) => {
             narratives of future worlds as devices that can allow us to 
             reflect on the technological and social tools that we use today.
 
-               <a onClick={toggleBio} className={bio_trigger}>[...]</a>
+               <a onClick={toggleBio} className={bio_trigger}> [...]</a>
             </p>
             <div className={bioStatus? show_extra_bio : work_item}>
                <p className={description}>
@@ -62,7 +62,7 @@ const Nav = ({id, title}) => {
                   on this interface.
                   <br/><br/>
                   <a href='https://www.are.na/maggie-chang' target='_blank'>are.na</a><br/>
-                  <a href='https://drive.google.com/file/d/1M5K4nKgV3gAWz4uXD_dcQkEs1ZeIRIU7/view?usp=sharing' target='_blank'>resume</a> (a lil update is needed)<br/>
+                  <a href='https://drive.google.com/file/d/1IfsWjyJRJB6OaYbWkXuNl4SqPzv34Qz8/view?usp=sharing' target='_blank'>resume</a> <br/>
                   maggiechangjx@gmail.com
                </p>
             </div>
