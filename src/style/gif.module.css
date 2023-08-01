@@ -1,7 +1,7 @@
 .localhost_style {
    width: 66%;
-   margin-left: 17%;
-   margin-bottom: 5px;
+   margin-left: 18%;
+   margin-bottom: 1px;
 }
 
 .gif_container {
@@ -38,4 +38,9 @@
    width: 100%;
    margin-top: 5px;
    margin-bottom: 5px;
+}
+
+.section_divide {
+   /* divides each pair of gifs in localhost*/
+   margin-bottom: 40px;
 }

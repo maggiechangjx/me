@@ -13,7 +13,9 @@ import {
    select_title,
    description,
    medium,
-   year
+   year,
+   github_link,
+   vertical_align_links,
 } from '../style/nav.module.css'
 
 
@@ -35,35 +37,34 @@ const Nav = ({id, title}) => {
       <div className={ nav }>
          <div className={bio}>
             <p>Hey! I'm <Link to='/'>Maggie</Link>.<br/>
-            I'm a creative technologist and artist who enjoys thinking about 
-            how digital technologies can become carriers of poetics, through 
+            I'm a creative technologist, designer, and artist who enjoys using digital 
+            technologies as carriers for both poetics and function through 
             interaction, generative design, metaphors, and performance.<br/><br/>
 
-            Currently, I'm using frameworks of speculative design and design 
-            fiction to think more expansively about the technologies around us.
-            Inspired by the ethos of science fiction, I'm working on making
-            narratives of future worlds as devices that can allow us to 
-            reflect on the technological and social tools that we use today.
+            Through my work, I reflect on how the ecology of humans, tools, and our 
+            environment continuously shape each other. Using frameworks of speculative design, 
+            I create alternative technological and social narratives to 
+            reimagine the possibilities for the tools that we use and the infrastructures
+            that we inhabit in the present. 
 
                <a onClick={toggleBio} className={bio_trigger}> [...]</a>
             </p>
             <div className={bioStatus? show_extra_bio : work_item}>
                <p className={description}>
-                  I am studying sculpture with a concentration
+                  I studied sculpture with a concentration
                   in <a href='https://ctc.risd.edu/' target='blank'>Computation, 
                   Technology, and Culture (CTC) </a> at the Rhode Island School 
-                  of Design (and graduating this June). Inspired by the notion of a website being 
-                  <a href='https://thecreativeindependent.com/essays/laurel-
-                  schwulst-my-website-is-a-shifting-house-next-to-a-river-of-
-                  knowledge-what-could-yours-be/' target='blank'> "a shifting 
+                  of Design. Inspired by the notion of a website being 
+                  <a href='https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/' target='blank'> 
+                  "a shifting 
                   house next to a river of knowledge"</a>, I see my own website 
                   as evolving snapshots of my growing practice, as some projects 
                   speak more directly to my current inqueries while others sediment
                   on this interface.
                   <br/><br/>
-                  <a href='https://www.are.na/maggie-chang' target='_blank'>are.na</a><br/>
-                  <a href='https://drive.google.com/file/d/1IfsWjyJRJB6OaYbWkXuNl4SqPzv34Qz8/view?usp=sharing' target='_blank'>resume</a> <br/>
-                  maggiechangjx@gmail.com
+                  <a href='https://www.are.na/maggie-chang' target='_blank'>Are.na</a><br/>
+                  <a href='https://drive.google.com/file/d/13sb2Tcp0-aVuYlwepRQjWYkfqGGuG7F7/view?usp=sharing' target='_blank'>Resume</a> <br/>
+                  maggiechangjx [at] gmail [dot] com
                </p>
             </div>
          </div>
@@ -83,8 +84,11 @@ const Nav = ({id, title}) => {
                <div id="desirePathsT">  {/* set the id here to be the same as title to be referenced by useEffect() */}
                   <Link to='/desire-paths/'>Desire Paths of Language</Link>
                </div>
-               <div id="desirePaths"  className={work_item}>
-                  <a href='https://maggiechangjx.github.io/language-desire-path/' target='blank' className={medium}>Website</a>
+               <div id="desirePaths" className={work_item}>
+                  <div className={vertical_align_links}>
+                     <a href='https://maggiechangjx.github.io/language-desire-path/' target='blank' className={medium}>Website</a>
+                     <a href='https://github.com/maggiechangjx/language-desire-path/tree/master/src' target='blank' className={github_link}>Github</a>
+                  </div>
                   <p className={year}>2023</p>
                   <p className={description}>
                      This is an online environment where people can make 
@@ -107,8 +111,9 @@ const Nav = ({id, title}) => {
                   <Link to='/localhost/'>localhost:8000</Link>
                </div>
                <div id="localhost"  className={work_item}>
-                  <p className={medium}>Website hosted by a Raspberry Pi in my 
-                  room, attached with sensors</p>
+                  <p className={medium}>Rapsberry Pi-hosted website attached to light, 
+                  temperature, and sound sensors; laser cut plexiglass box</p>
+                  <a href='https://github.com/maggiechangjx/language-desire-path/tree/master/src' target='blank' className={github_link}>Github</a>
                   <p className={year}>2022</p>
                   <p className={description}>
                   localhost:8000 is a website hosted on a local Raspberry Pi that's 
@@ -117,11 +122,10 @@ const Nav = ({id, title}) => {
                   The website's digital environment and accessible content 
                   flickers to the changes in the physical enviroment around 
                   its server. <br/><br/>
-                  The Raspberry Pi server travels with me, so our locations will 
-                  change from time to time. The website might also be down if 
-                  I didn't take care of it properly. At the moment, the website 
-                  can be accessed at 
-                  <a href='http://192.168.1.152/' target='blank'> 192.168.1.152</a>. 
+                  The Raspberry Pi server lives with me, and it switches offline when
+                  I am not around to take care of it. I'm currently out of town for a 
+                  few weeks, so the site is hibernating for a while. The new address for the
+                  website will be available after I return.
                   </p>
                </div>
             </li>
@@ -242,7 +246,7 @@ const Nav = ({id, title}) => {
             </li>
             <li>
                <div id="performanceT">
-                  <Link to='/performance/'>Performance</Link>
+                  {/* <Link to='/performance/'>Performance</Link> */}
                </div>
                <div id="performance"  className={work_item}>
                   <p className={medium}>Sculpture and video performance</p>
@@ -257,7 +261,7 @@ const Nav = ({id, title}) => {
             </li>
             <li>
                <div id="pearT">
-                  <Link to='/pear/'>Counting seconds by the peeling of a pear</Link>
+                  {/* <Link to='/pear/'>Counting seconds by the peeling of a pear</Link> */}
                </div>
                <div id="pear"  className={work_item}>
                   <p className={medium}>Video essay</p>
