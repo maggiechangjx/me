@@ -6,7 +6,6 @@ import Nav from "../components/nav"
 import Content from "../components/content"
 import { base_layout, content_layout, nav_layout } from '../style/layout.module.css'
 
-
 const Layout = ({ id, title, children }) => {
 
    // const [curPage, setCurPage] = useState('home')

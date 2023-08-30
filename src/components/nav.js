@@ -1,6 +1,6 @@
-import React, { useState,useEffect } from 'react'
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
+import React, { useState,useEffect } from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import { 
    nav,
    bio,
@@ -16,8 +16,13 @@ import {
    year,
    github_link,
    vertical_align_links,
-} from '../style/nav.module.css'
+   sub_caption,
+} from '../style/nav.module.css';
 
+if (typeof window !== "undefined") {
+   // eslint-disable-next-line global-require
+   require("smooth-scroll")('a[href*="#"]')
+ }
 
 const Nav = ({id, title}) => {
    const [bioStatus, setBioStatus] = useState(false);
@@ -80,6 +85,14 @@ const Nav = ({id, title}) => {
          
          <ul className = {works_list}>
             {/* <li>Selected works:</li> */ }
+            {/*
+            <li>
+               <div id="carouselTestT">
+                  <Link to='/carousel-test/'>Carousel Test</Link>
+               </div>
+               <div id="carouselTest" className={work_item}></div>
+            </li>
+            */}
             <li >
                <div id="desirePathsT">  {/* set the id here to be the same as title to be referenced by useEffect() */}
                   <Link to='/desire-paths/'>Desire Paths of Language</Link>
@@ -126,6 +139,70 @@ const Nav = ({id, title}) => {
                   I am not around to take care of it. I'm currently out of town for a 
                   few weeks, so the site is hibernating for a while. The new address for the
                   website will be available after I return.
+                  </p>
+               </div>
+            </li>
+            <li>
+               <div id="mementoT">
+                  <Link to='/mementogenesis/'>Mementogenesis</Link>
+               </div>
+               <div id="mementogenesis"  className={work_item}>
+                  <p className={medium}>Exploratory worldbuilding for a speculative narrative in which human DNA becomes the 
+                  only source of storage for all data and memory</p>
+                  <p className={year}>2023-ongoing</p>
+                  <p className={description}>
+                  As humans move through time, the accumulation of data has exceeded the capacities of existing data centers. 
+                  Recognizing that humans can no longer live apart from computers or data, humans started using their own 
+                  bodies for data storage. Human DNA has become computer memory. As DNA mutates throughout one’s 
+                  lifespan, the data stored within the it will also mutate. A daily data ritual takes place where 
+                  people sort through and reinterpret a part of the data and memories stored within their own bodies. 
+                  In this world, the rereading of history will always be an archeological act.
+                  <br />
+                  <ul>
+                     <li>
+                        <Link to={"/mementogenesis/#family_tree_scroll"} className={sub_caption}>1. Family Tree of Twins</Link>
+                        <div >
+                           <p className={medium}>Blender renderings and animation</p>
+                           <p className={description}>Each family unit is responsible for storing their own generational memories and a 
+                              portion of the social collective data. As an attempt to prevent the loss of data,
+                               each family unit must give birth to twins and store a copy of the data in each twin. 
+                               Here shows a family tree of 7 generations</p>
+                        </div>
+                     </li>
+                     <li id="test"><
+                        Link to={"/mementogenesis/#module_scroll"} className={sub_caption}>2. Twin Modules</Link>
+                        <div >
+                           <p className={medium}>Procreate, Adobe Illustrator</p>
+                           <p className={description}>Modular visualizations following the structure of the family tree: two base  modules pair together
+                              to create two new twin modules. </p>
+                        </div>
+                     </li>
+                     <li>
+                        <Link to={"/mementogenesis/#microscopy_scroll"} className={sub_caption}>3. Microscopy and Mutation</Link>
+                        <div >
+                           <p className={medium}>Microscopy of broken down cheek cells, image generation with Midjourney 
+                           and RunwayML</p>
+                           <p className={description}>
+                              To approximate an embodied experience of the narrative, I extracted and observed broken 
+                              down proteins and DNA inside my cheek cells. The images were captured under 400x and 1000x 
+                              magnification.
+                              <br/>
+                              Since the data stored within DNA is subject to mutate, I visualized a set of possible 
+                              mutations using select microscopy images in combination with Midjourney and 
+                              RunwayML's Frame Interpolation tool.
+                           </p>
+                        </div>
+                     </li>
+                     <li>
+                        <Link to={"/mementogenesis/#language_system_scroll"} className={sub_caption}>4. Language System</Link>
+                        <div>
+                           <p className={medium}>Figma, Procreate, and Blender renderings</p>
+                           <p className={description}>
+                              A preliminary language system is made following the structure and composition of DNA. 
+                           </p>
+                        </div>
+                     </li>
+                  </ul>
                   </p>
                </div>
             </li>

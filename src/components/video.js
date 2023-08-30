@@ -7,7 +7,7 @@ const Video = ({ url, title }) => (
       className={video}
       src={url}
       title={title}
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture"
       frameBorder="0"
       webkitallowfullscreen="true"
       mozallowfullscreen="true"

@@ -1,0 +1,23 @@
+.section_divider {
+    width: 99.5%;
+    border-top: solid;
+    border-color: rgb(200,200,200);
+    height: 13vh;
+    background-image: linear-gradient(rgba(83, 88, 125, 0.317), rgba(96, 100, 133, 0.272) 8%, rgba(255,255,255,0) 60%);
+    /* box-shadow: 0px 20px 20px rgba(91, 97, 142, 0.5) inset; */
+    position: relative;
+ }
+ 
+ .subsection_divider {
+    height: 4vh;
+ }
+
+.memento_intro {
+    width: 99.5%;
+    border-top: solid;
+    border-color: rgb(200,200,200);
+    height: 15vh;
+    background-image: linear-gradient(rgba(56, 60, 96, 0.563), rgba(59, 63, 98, 0.389) 8%, rgba(255,255,255,0) 60%);
+    /* box-shadow: 0px 20px 20px rgba(91, 97, 142, 0.5) inset; */
+    position: relative;
+}
