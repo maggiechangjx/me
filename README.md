@@ -2,7 +2,7 @@ This is the code for my own portfolio, currently hosted on Github pages. Below
 are notes from Gatsby that I keep as reminder for myself.
 
 
-## 🚀 Quick start
+## Quick start
 
 1.  **Create a Gatsby site.**
 
@@ -42,7 +42,7 @@ are notes from Gatsby that I keep as reminder for myself.
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-## 🚀 Quick start (Netlify)
+## Quick start (Netlify)
 
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
