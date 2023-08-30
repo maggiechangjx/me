@@ -20,17 +20,33 @@ body {
    /*margin: 10px;*/
    /*width: 100%;  */
    margin-left: 24.35vw;
+   /*
    grid-column-start: 2;
    grid-column-end: 3;
+   */
    /*display: flex;*/
    /*flex-direction: column;*/
    /*flex-wrap: wrap;*/
 }
 
+/*
 .nav_layout {
    grid-column-start: 1;
    grid-column-end: 2;
 }
+*/
 
+@media only screen and (max-width: 700px) {
+   .base_layout {
+      flex-direction: column;
+   }
 
+   .content_layout {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-top: 30vh;
+   }
+
+}
 

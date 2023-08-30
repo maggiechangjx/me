@@ -44,3 +44,10 @@
    /* divides each pair of gifs in localhost*/
    margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+   .localhost_style {
+      width: 100vw;
+      margin: 0px;
+   }
+}

@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from "../components/layout"
-import { cyberfem_poster } from '../style/images.module.css'
+import { 
+   cyberfem_poster,
+   h_img } from '../style/images.module.css'
 
 import p1 from '../images/cyberfem/1.jpg'
 import p2 from '../images/cyberfem/2.jpg'
@@ -12,10 +14,10 @@ const cyberfemPage = () => {
    return (
      <Layout id="cyberfem" title="cyberfemT">
          <img src={poster} alt="event poster" className={cyberfem_poster}/>
-         <img src={p3} alt="Mindy Seu presenting the Cyberfeminism Index"/>
-         <img src={p1} alt="event"/>
-         <img src={p4} alt="Friends"/>
-         <img src={p2} alt="Books"/>
+         <img src={p3} alt="Mindy Seu presenting the Cyberfeminism Index" className={h_img} />
+         <img src={p1} alt="event" className={h_img} />
+         <img src={p4} alt="Friends" className={h_img} />
+         <img src={p2} alt="Books" className={h_img} />
       </Layout>
    )
  }

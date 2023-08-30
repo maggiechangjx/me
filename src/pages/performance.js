@@ -4,12 +4,13 @@ import Layout from "../components/layout"
 import Video from "../components/video"
 import { performance_v_img, performance_v_img_org, h_img } from '../style/images.module.css'
 
+import p1 from '../images/performance/p1.jpg'
+
 const performancePage = () => {
    return (
       <Layout id="performance" title="performanceT">
          <Video url="https://www.youtube.com/embed/LbNKgAJ7k-s" title="perfomance"></Video>
 
-         <div className={performance_v_img_org}>
          <StaticImage 
             src="../images/performance/p1.jpg" 
             alt="Image of performance" 
@@ -26,7 +27,7 @@ const performancePage = () => {
             backgroundColor="transparent"
             className={performance_v_img}
          />
-         </div>
+       
          <StaticImage 
             src="../images/performance/p3.jpg" 
             alt="Image of performance" 

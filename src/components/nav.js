@@ -228,7 +228,7 @@ const Nav = ({id, title}) => {
                      a conversation around the dynamics within holding cross-disciplinary
                      practices as creatives.<br/><br/>
 
-                     An edited transcript of the panel will soon be shared!
+                     {/* An edited transcript of the panel will soon be shared! */}
                   </p>
                </div>
             </li>

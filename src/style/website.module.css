@@ -7,3 +7,10 @@
    height: 100%;
    width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+   .web_frame {
+      width: 100vw;
+      height: 30vh;
+   }
+}

@@ -10,12 +10,3 @@
 .half_size {
   transform: scale(0.5);
 }
-
-/*
-const pageStyle = {
-   color: "salmon",
-   fontFamily: "-apple-system, Roboto, sans-serif, serif",
- }
- export default pageStyle
- */
-
