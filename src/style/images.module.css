@@ -176,9 +176,41 @@ hr {
       width: 100vw;
    }
 
+   .memento_img_v {
+      width: 100vw;
+   }
+
+   .memento_img_h25 {
+      width: 49vw;
+   }
+
+   .memento_img_h33 {
+      width: 100vw;
+      margin-top: 6px;
+   }
+
+   .memento_img_h50 {
+      width: 100vw;
+   }
+
+   .memento_img_h60 {
+      width: 100vw;
+   }
+
+   .memento_flexitem_gif {
+      width: 100vw;
+   }
+
+   .memento_flex_microscopy_img {
+      width: 100vw;
+   }
+
    .memento_mutation_gif {
-      flex: 1 1 0px;
-      flex-grow: 1;
+      width: 49vw;
+   }
+
+   .memento_flexbox_1row {
+      flex-direction: column;
    }
 }
 
