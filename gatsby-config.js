@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: "/me",
   siteMetadata: {
     title: `Portfolio`,
-    siteUrl: `http://maggiechang.space/`
+    siteUrl: `http://www.maggiechang.space/`
   },
   plugins: [
     "gatsby-plugin-image", 
