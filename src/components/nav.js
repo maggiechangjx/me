@@ -1,14 +1,17 @@
 import React, { useState,useEffect } from 'react';
-import { Link } from 'gatsby';
+import { Link, useScrollRestoration } from 'gatsby';
 import PropTypes from 'prop-types';
 import { 
    nav,
    bio,
+   bio_paragraph,
    bio_trigger,
+   bio_trigger_mobile,
    show_extra_bio,
    works_list,
    show,
    work_item, 
+   work_item_mobile,
    visible_title,
    select_title,
    description,
@@ -25,6 +28,23 @@ if (typeof window !== "undefined") {
  }
 
 const Nav = ({id, title}) => {
+   {/* code for detecting screen width, currently not needed
+   const [width, setWidth] = useState(window.innerWidth);
+
+   function logWindowSizeChange() {
+      setWidth(window.innerWidth);
+   }
+
+   useEffect(() => {
+      window.addEventListener('resize', logWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', logWindowSizeChange);
+      }
+   }, []);
+
+   const is_mobile = width <= 700;
+   */}
+
    const [bioStatus, setBioStatus] = useState(false);
 
    const toggleBio = () => {
@@ -33,26 +53,34 @@ const Nav = ({id, title}) => {
 
    useEffect(()=>{
       if (id !== "home") {
-         document.getElementById(id).classList.add(`${show}`)
-         document.getElementById(title).classList.add( `${select_title}`)
+         document.getElementById(id).classList.add(`${show}`);
+         document.getElementById(title).classList.add( `${select_title}`);
+         
+         // scroll to the title (for mobile)
+         const posID = id.concat("T");
+         const scrollPosition = document.getElementById(posID).getBoundingClientRect().top;
+         console.log(`scrollPosition: ${scrollPosition}`)
+         document.getElementById('nav').scrollTo(0, scrollPosition);
       }
    },[])
 
    return (
-      <div className={ nav }>
+      <div className={ nav } id='nav'>
          <div className={bio}>
-            <p>Hey! I'm <Link to='/'>Maggie</Link>.<br/>
-            I'm a creative technologist, designer, and artist who enjoys using digital 
-            technologies as carriers for both poetics and function through 
-            interaction, generative design, metaphors, and performance.<br/><br/>
-
-            Through my work, I reflect on how the ecology of humans, tools, and our 
-            environment continuously shape each other. Using frameworks of speculative design, 
-            I create alternative technological and social narratives to 
-            reimagine the possibilities for the tools that we use and the infrastructures
-            that we inhabit in the present. 
-
-               <a onClick={toggleBio} className={bio_trigger}> [...]</a>
+            <p>
+               Hey! I'm <Link to='/'>Maggie</Link>.<br/>
+               I'm a creative technologist, designer, and artist who enjoys using digital 
+               technologies as carriers for both poetics and function through 
+               interaction, generative design, metaphors, and performance. <a onClick={toggleBio} className={bio_trigger_mobile}> [...]</a>
+            </p>
+            <p>
+               <div className={bioStatus? show_extra_bio : work_item_mobile}>
+                  Through my work, I reflect on how the ecology of humans, tools, and our 
+                  environment continuously shape each other. Using frameworks of speculative design, 
+                  I create alternative technological and social narratives to 
+                  reimagine the possibilities for the tools that we use and the infrastructures
+                  that we inhabit in the present. <a onClick={toggleBio} className={bio_trigger}> [...]</a>
+               </div>
             </p>
             <div className={bioStatus? show_extra_bio : work_item}>
                <p className={description}>
@@ -143,7 +171,7 @@ const Nav = ({id, title}) => {
                </div>
             </li>
             <li>
-               <div id="mementoT">
+               <div id="mementogenesisT">
                   <Link to='/mementogenesis/'>Mementogenesis</Link>
                </div>
                <div id="mementogenesis"  className={work_item}>

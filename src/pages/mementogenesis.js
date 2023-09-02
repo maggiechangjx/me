@@ -130,7 +130,7 @@ const mementoPage = () => {
    }
 
    return (
-     <Layout id="mementogenesis" title="mementoT">
+     <Layout id="mementogenesis" title="mementogenesisT">
          
          <div 
             id="family_tree_scroll" 

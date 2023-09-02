@@ -7,6 +7,7 @@ p {
 }
 
 .nav {
+   scroll-behavior: smooth;
    height: 99vh;
    width: 23vw;
    min-width: 23vw;
@@ -29,6 +30,10 @@ p {
 
 .bio {
    border-bottom: 1px solid rgba(91, 97, 142, 0.35);
+}
+
+.bio_paragraph {
+   display: inline-block;
 }
 
 .bio_trigger {
@@ -138,5 +143,28 @@ a:hover {
    p {
       font-size: 14px;
       line-height: 20px;
+   }
+
+   .bio_trigger {
+      display: none;
+   }
+
+   .bio_trigger_mobile {
+      display: inline-block;
+      cursor: pointer;
+   }
+
+   .work_item_mobile {
+      display: none;
+   }
+}
+
+@media only screen and (min-width: 700px) {
+   .bio_trigger {
+      display: inline-block;
+   }
+
+   .bio_trigger_mobile {
+      display: none;
    }
 }

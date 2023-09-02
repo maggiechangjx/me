@@ -10,7 +10,8 @@ import Layout from "../components/layout"
 // import { pageStyle } from "./style.js"
 import { 
   page,
-  title,} from '../style/home.module.css'
+  title,
+  index_img } from '../style/home.module.css'
 import { index_gif_container } from '../style/gif.module.css'
 
 // media
@@ -144,118 +145,118 @@ const home = () => {
     <Layout id={"home"} title={"homeT"}> 
       <div className={index_gif_container}>
 
-        <img src={l36} alt="sneak peek"/>
-        <img src={p3} alt="gif"/>
-        <img src={b1} alt="gif"/>
-        <img src={d8} alt="sneak peek"/>
-        <img src={l21} alt="sneak peek"/>
-        <img src={b25} alt="sneak peek"/>
-        <img src={l31} alt="sneak peek"/>
-        <img src={b6} alt="gif"/>
-        <img src={l15} alt="sneak peek"/>
-        <img src={m6} alt="sneak peek"/>
-        <img src={em1} alt="gif"/>
-        <img src={p11} alt="gif"/>
-        <img src={b9} alt="gif"/>
-        <img src={w1} alt="gif"/>
-        <img src={l9} alt="sneak peek"/>
-        <img src={b11} alt="gif"/>
-        <img src={d1} alt="gif"/>
-        <img src={l26} alt="sneak peek"/>
-        <img src={b2} alt="gif"/>
-        <img src={l37} alt="sneak peek"/>
-        <img src={w4} alt="gif"/>
-        <img src={d3} alt="gif"/>
-        <img src={l33} alt="sneak peek"/>
-        <img src={e1} alt="gif"/>
-        <img src={w10} alt="sneak peek"/>
-        <img src={p10} alt="gif"/>
-        <img src={b7} alt="gif"/>
-        <img src={l1} alt="gif"/>
-        <img src={b4} alt="gif"/>
-        <img src={m4} alt="sneak peek"/>
-        <img src={l2} alt="gif"/>
-        <img src={d2} alt="gif"/>
-        <img src={w5} alt="gif"/>
-        <img src={b12} alt="sneak peek"/>
-        <img src={l4} alt="gif"/>
-        <img src={m5} alt="sneak peek"/>
-        <img src={p1} alt="gif"/>
-        <img src={l5} alt="gif"/>
-        <img src={b10} alt="gif"/>
-        <img src={l23} alt="sneak peek"/>
-        <img src={pe1} alt="gif"/>
-        <img src={l16} alt="sneak peek"/>
-        <img src={w8} alt="sneak peek"/>
-        <img src={l13} alt="sneak peek"/>
-        <img src={b20} alt="sneak peek"/>
-        <img src={w1g} alt="gif"/>
-        <img src={l35} alt="sneak peek"/>
-        <img src={b16} alt="sneak peek"/>
-        <img src={p4} alt="gif"/>
-        <img src={l6} alt="gif"/>
-        <img src={b26} alt="sneak peek"/>
-        <img src={l22} alt="sneak peek"/>
-        <img src={b8} alt="gif"/>
-        <img src={w2} alt="gif"/>
-        <img src={p2} alt="gif"/>
-        <img src={b28} alt="sneak peek"/>
-        <img src={l12} alt="sneak peek"/>
-        <img src={p6} alt="gif"/>
-        <img src={e2} alt="gif"/>
-        <img src={l29} alt="sneak peek"/>
-        <img src={b18} alt="sneak peek"/>
-        <img src={l32} alt="sneak peek"/>
-        <img src={p7} alt="gif"/>
-        <img src={em3} alt="gif"/>
-        <img src={p8} alt="gif"/>
-        <img src={l7} alt="gif"/>
-        <img src={b21} alt="sneak peek"/>
-        <img src={d9} alt="sneak peek"/>
-        <img src={l25} alt="sneak peek"/>
-        <img src={m1} alt="sneak peek"/>
-        <img src={b22} alt="sneak peek"/>
-        <img src={d5} alt="sneak peek"/>
-        <img src={l18} alt="sneak peek"/>
-        <img src={pe2} alt="gif"/>
-        <img src={b23} alt="sneak peek"/>
-        <img src={l8} alt="gif"/>
-        <img src={w9} alt="sneak peek"/>
-        <img src={p5} alt="gif"/>
-        <img src={l19} alt="sneak peek"/>
-        <img src={d6} alt="sneak peek"/>
-        <img src={b17} alt="sneak peek"/>
-        <img src={l24} alt="sneak peek"/>
-        <img src={w7} alt="gif"/>
-        <img src={pe5} alt="sneak peek"/>
+        <img src={l36} alt="sneak peek" className={index_img}/>
+        <img src={p3} alt="gif" className={index_img}/>
+        <img src={b1} alt="gif" className={index_img}/>
+        <img src={d8} alt="sneak peek" className={index_img}/>
+        <img src={l21} alt="sneak peek" className={index_img}/>
+        <img src={b25} alt="sneak peek" className={index_img}/>
+        <img src={l31} alt="sneak peek" className={index_img}/>
+        <img src={b6} alt="gif" className={index_img}/>
+        <img src={l15} alt="sneak peek" className={index_img}/>
+        <img src={m6} alt="sneak peek" className={index_img}/>
+        <img src={em1} alt="gif" className={index_img}/>
+        <img src={p11} alt="gif" className={index_img}/>
+        <img src={b9} alt="gif" className={index_img}/>
+        <img src={w1} alt="gif" className={index_img}/>
+        <img src={l9} alt="sneak peek" className={index_img}/>
+        <img src={b11} alt="gif" className={index_img}/>
+        <img src={d1} alt="gif" className={index_img}/>
+        <img src={l26} alt="sneak peek" className={index_img}/>
+        <img src={b2} alt="gif" className={index_img}/>
+        <img src={l37} alt="sneak peek" className={index_img}/>
+        <img src={w4} alt="gif" className={index_img}/>
+        <img src={d3} alt="gif" className={index_img}/>
+        <img src={l33} alt="sneak peek" className={index_img}/>
+        <img src={e1} alt="gif" className={index_img}/>
+        <img src={w10} alt="sneak peek" className={index_img}/>
+        <img src={p10} alt="gif" className={index_img}/>
+        <img src={b7} alt="gif" className={index_img}/>
+        <img src={l1} alt="gif" className={index_img}/>
+        <img src={b4} alt="gif" className={index_img}/>
+        <img src={m4} alt="sneak peek" className={index_img}/>
+        <img src={l2} alt="gif" className={index_img}/>
+        <img src={d2} alt="gif" className={index_img}/>
+        <img src={w5} alt="gif" className={index_img}/>
+        <img src={b12} alt="sneak peek" className={index_img}/>
+        <img src={l4} alt="gif" className={index_img}/>
+        <img src={m5} alt="sneak peek" className={index_img}/>
+        <img src={p1} alt="gif" className={index_img}/>
+        <img src={l5} alt="gif" className={index_img}/>
+        <img src={b10} alt="gif" className={index_img}/>
+        <img src={l23} alt="sneak peek" className={index_img}/>
+        <img src={pe1} alt="gif" className={index_img}/>
+        <img src={l16} alt="sneak peek" className={index_img}/>
+        <img src={w8} alt="sneak peek" className={index_img}/>
+        <img src={l13} alt="sneak peek" className={index_img}/>
+        <img src={b20} alt="sneak peek" className={index_img}/>
+        <img src={w1g} alt="gif" className={index_img}/>
+        <img src={l35} alt="sneak peek" className={index_img}/>
+        <img src={b16} alt="sneak peek" className={index_img}/>
+        <img src={p4} alt="gif" className={index_img}/>
+        <img src={l6} alt="gif" className={index_img}/>
+        <img src={b26} alt="sneak peek" className={index_img}/>
+        <img src={l22} alt="sneak peek" className={index_img}/>
+        <img src={b8} alt="gif" className={index_img}/>
+        <img src={w2} alt="gif" className={index_img}/>
+        <img src={p2} alt="gif" className={index_img}/>
+        <img src={b28} alt="sneak peek" className={index_img}/>
+        <img src={l12} alt="sneak peek" className={index_img}/>
+        <img src={p6} alt="gif" className={index_img}/>
+        <img src={e2} alt="gif" className={index_img}/>
+        <img src={l29} alt="sneak peek" className={index_img}/>
+        <img src={b18} alt="sneak peek" className={index_img}/>
+        <img src={l32} alt="sneak peek" className={index_img}/>
+        <img src={p7} alt="gif" className={index_img}/>
+        <img src={em3} alt="gif" className={index_img}/>
+        <img src={p8} alt="gif" className={index_img}/>
+        <img src={l7} alt="gif" className={index_img}/>
+        <img src={b21} alt="sneak peek" className={index_img}/>
+        <img src={d9} alt="sneak peek" className={index_img}/>
+        <img src={l25} alt="sneak peek" className={index_img}/>
+        <img src={m1} alt="sneak peek" className={index_img}/>
+        <img src={b22} alt="sneak peek" className={index_img}/>
+        <img src={d5} alt="sneak peek" className={index_img}/>
+        <img src={l18} alt="sneak peek" className={index_img}/>
+        <img src={pe2} alt="gif" className={index_img}/>
+        <img src={b23} alt="sneak peek" className={index_img}/>
+        <img src={l8} alt="gif" className={index_img}/>
+        <img src={w9} alt="sneak peek" className={index_img}/>
+        <img src={p5} alt="gif" className={index_img}/>
+        <img src={l19} alt="sneak peek" className={index_img}/>
+        <img src={d6} alt="sneak peek" className={index_img}/>
+        <img src={b17} alt="sneak peek" className={index_img}/>
+        <img src={l24} alt="sneak peek" className={index_img}/>
+        <img src={w7} alt="gif" className={index_img}/>
+        <img src={pe5} alt="sneak peek" className={index_img}/>
         {/*<img src={b15} alt="sneak peek"/>*/}
-        <img src={l34} alt="sneak peek"/>
-        <img src={p9} alt="gif"/>
-        <img src={d7} alt="sneak peek"/>
+        <img src={l34} alt="sneak peek" className={index_img}/>
+        <img src={p9} alt="gif" className={index_img}/>
+        <img src={d7} alt="sneak peek" className={index_img}/>
         {/*<img src={b3} alt="gif"/>*/}
-        <img src={l3} alt="gif"/>
-        <img src={d10} alt="sneak peek"/>
-        <img src={b24} alt="sneak peek"/> 
-        <img src={l10} alt="sneak peek"/>
-        <img src={w11} alt="sneak peek"/>
-        <img src={pe4} alt="sneak peek"/>
-        <img src={b27} alt="sneak peek"/>
-        <img src={l11} alt="sneak peek"/>
-        <img src={b13} alt="sneak peek"/>
-        <img src={w3} alt="gif"/>
-        <img src={l14} alt="sneak peek"/>
-        <img src={b5} alt="gif"/>
-        <img src={l17} alt="sneak peek"/>
-        <img src={em2} alt="gif"/>
-        <img src={b14} alt="sneak peek"/>
-        <img src={pe3} alt="sneak peek"/>
-        <img src={m2} alt="sneak peek"/>
-        <img src={l20} alt="sneak peek"/>
-        <img src={l27} alt="sneak peek"/>
-        <img src={d4} alt="sneak peek"/>
-        <img src={l28} alt="sneak peek"/>
-        <img src={b19} alt="sneak peek"/>
-        <img src={l30} alt="sneak peek"/>
+        <img src={l3} alt="gif" className={index_img}/>
+        <img src={d10} alt="sneak peek" className={index_img}/>
+        <img src={b24} alt="sneak peek" className={index_img}/> 
+        <img src={l10} alt="sneak peek" className={index_img}/>
+        <img src={w11} alt="sneak peek" className={index_img}/>
+        <img src={pe4} alt="sneak peek" className={index_img}/>
+        <img src={b27} alt="sneak peek" className={index_img}/>
+        <img src={l11} alt="sneak peek" className={index_img}/>
+        <img src={b13} alt="sneak peek" className={index_img}/>
+        <img src={w3} alt="gif" className={index_img}/>
+        <img src={l14} alt="sneak peek" className={index_img}/>
+        <img src={b5} alt="gif" className={index_img}/>
+        <img src={l17} alt="sneak peek" className={index_img}/>
+        <img src={em2} alt="gif" className={index_img}/>
+        <img src={b14} alt="sneak peek" className={index_img}/>
+        <img src={pe3} alt="sneak peek" className={index_img}/>
+        <img src={m2} alt="sneak peek" className={index_img}/>
+        <img src={l20} alt="sneak peek" className={index_img}/>
+        <img src={l27} alt="sneak peek" className={index_img}/>
+        <img src={d4} alt="sneak peek" className={index_img}/>
+        <img src={l28} alt="sneak peek" className={index_img}/>
+        <img src={b19} alt="sneak peek" className={index_img}/>
+        <img src={l30} alt="sneak peek" className={index_img}/>
         
 
 
