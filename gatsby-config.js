@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `http://www.maggiechang.space/`
   },
   plugins: [
+    "gatsby-plugin-netlify",
     "gatsby-plugin-image", 
     "gatsby-plugin-sitemap", 
     "gatsby-plugin-sharp", 
