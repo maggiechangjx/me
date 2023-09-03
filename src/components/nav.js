@@ -79,9 +79,8 @@ const Nav = ({id, title}) => {
                   environment continuously shape each other. Using frameworks of speculative design, 
                   I create alternative technological and social narratives to 
                   reimagine the possibilities for the tools that we use and the infrastructures
-                  that we inhabit in the present. 
+                  that we inhabit in the present. <a onClick={toggleBio} className={bio_trigger}> [...]</a>
                </p>
-               <a onClick={toggleBio} className={bio_trigger}> [...]</a>
             </div>
             <div className={bioStatus? show_extra_bio : work_item}>
                <p className={description}>
