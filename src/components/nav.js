@@ -73,15 +73,16 @@ const Nav = ({id, title}) => {
                technologies as carriers for both poetics and function through 
                interaction, generative design, metaphors, and performance. <a onClick={toggleBio} className={bio_trigger_mobile}> [...]</a>
             </p>
-            <p>
-               <div className={bioStatus? show_extra_bio : work_item_mobile}>
+            <div className={bioStatus? show_extra_bio : work_item_mobile}>
+               <p>
                   Through my work, I reflect on how the ecology of humans, tools, and our 
                   environment continuously shape each other. Using frameworks of speculative design, 
                   I create alternative technological and social narratives to 
                   reimagine the possibilities for the tools that we use and the infrastructures
-                  that we inhabit in the present. <a onClick={toggleBio} className={bio_trigger}> [...]</a>
-               </div>
-            </p>
+                  that we inhabit in the present. 
+               </p>
+               <a onClick={toggleBio} className={bio_trigger}> [...]</a>
+            </div>
             <div className={bioStatus? show_extra_bio : work_item}>
                <p className={description}>
                   I studied sculpture with a concentration
