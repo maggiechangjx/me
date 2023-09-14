@@ -13,6 +13,16 @@
 
 .img25 {
   cursor: pointer;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 7px 7px rgba(230, 235, 255, 0.705);
+}
+
+.img25_off {
+  width: 100%;
+  height: 100%;
+  filter: saturate(10%) contrast(77%) brightness(86%) 
+    invert(100%) sepia(20%) hue-rotate(185deg) blur(5px); 
 }
 
 .text_descriptions {
@@ -20,9 +30,36 @@
   margin-top: 3px;
 }
 
+.text_on_img {
+  position: absolute;
+  color: rgb(60, 0, 241);
+  z-index: 2;
+  font-family: "Inter Tight", sans-serif;
+}
+
+.text_on_img_hide {
+  display: none;
+}
+
+
 @media only screen and (max-width: 700px) {
   .index_img {
     width: 20vw;
+  }
+
+  .text_img_container {
+    width: 25%;
+    height: auto;
+    position: relative;
+  }
+
+  .text_on_img {
+    margin-left: 8%;
+    margin-top: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
+    font-weight: 400;
+    font-size: 14px;
   }
   
 }
@@ -35,34 +72,14 @@
   }
   
   .text_on_img {
-    position: absolute;
-    color: rgb(60, 0, 241);
-    z-index: 2;
     margin-left: 4%;
     margin-top: 3%;
     margin-right: 3%;
     margin-bottom: 3%;
-    font-family: "Inter Tight", sans-serif;
     font-weight: 400;
     font-size: 15px;
   }
-
-  .text_on_img_hide {
-    display: none;
-  }
-
-  .img25 {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 7px 7px rgba(230, 235, 255, 0.705);
-  }
-
-  .img25_off {
-    width: 100%;
-    height: 100%;
-    filter: saturate(10%) contrast(77%) brightness(86%) 
-      invert(100%) sepia(20%) hue-rotate(185deg) blur(5px); 
-  }
+  
 
   .img25_block {
     width: 16.66%;
