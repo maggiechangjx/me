@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { navigate } from 'gatsby'
-import className from 'classnames'
 
 // styles
 // import { pageStyle } from "./style.js"
 import { 
-  page,
-  title,
-  index_img,
   img25,
-  img25_block,
   img25_off,
   text_img_container,
   text_on_img,
@@ -73,6 +68,11 @@ import exmod4 from '../images/index/exmod4.gif'
 
 const Index = () => {
   // ADD DOUBLE TAP FOR MOBILE 
+
+  //const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+  const windowWidth = window.innerWidth;
+  // console.log(`window width: ${windowWidth}`)
+  const widthThreshold = 700;
 
   const [desirePathState, setDesirePathState] = useState(img25_off);
   const [localhostState, setLocalhostState] = useState(img25_off);
@@ -166,11 +166,50 @@ const Index = () => {
     }
   }
 
+  // variables for mobile click interactions
+  //let mobileClickCount = 0;
+  //let prevMobileClickTarget = '';
+  const [mobileClickCount, setMobileClickCount] = useState(0);
+  const [prevMobileClickTarget, setPrevMobileClickTarget] = useState('');
+
   function linkToProject(e) {
     // on click, show project page
     // the ID of the image corresponds to the page name
-    navigate(`/${e.target.id}`);
-    console.log(e.target.id);
+    if (windowWidth >= widthThreshold) {
+      navigate(`/${e.target.id}`);
+      // console.log(e.target.id);
+      console.log('desktop mode');
+    }
+    else if (windowWidth < widthThreshold) {
+      // FIGURE OUT LOGIC
+      //mobileClickCount += 1;
+      setMobileClickCount(mobileClickCount + 1);
+      console.log(`previous mobile click target: ${prevMobileClickTarget}`)
+
+      if (prevMobileClickTarget === '') {
+        //prevMobileClickTarget = e.target.id;
+        setPrevMobileClickTarget(e.target.id);
+        console.log('prevmobiletarget was blank');
+      }
+      else if (mobileClickCount >= 2 && e.target.id == prevMobileClickTarget) {
+        navigate(`/${e.target.id}`);
+        //mobileClickCount = 0;
+        setMobileClickCount(0);
+        console.log('page should proceed');
+      }
+      else if (prevMobileClickTarget != e.target.id) {
+        //mobileClickCount += 1; 
+        setMobileClickCount(mobileClickCount + 1);
+        setPrevMobileClickTarget(e.target.id);
+        console.log('case 2-3');
+      }
+      console.log(`${e.target.id}: ${mobileClickCount}`)
+      console.log(`prevMobileClickTarget: ${prevMobileClickTarget}`);
+      console.log(`current click: ${e.target.id}`)
+    }
+    else {
+      console.log('/components/indexImages.jsx linkToProject() window width issues')
+    }
   }
   
   return (

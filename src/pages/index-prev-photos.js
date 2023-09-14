@@ -22,6 +22,7 @@ import {
 import { index_gif_container } from '../style/gif.module.css'
 
 // media
+/*
 import b1 from '../images/index/b1.gif'
 import b2 from '../images/index/b2.gif'
 import b3 from '../images/index/b3.gif'
@@ -177,7 +178,7 @@ import localhost3 from '../images/index/localhost3.gif'
 import localhost4 from '../images/index/localhost4.gif'
 import localhost5 from '../images/index/localhost5.gif'
 import localhost6 from '../images/index/localhost6.png'
-
+*/
 
 const home = () => {
   var imgClassNames = classNames({
@@ -321,81 +322,6 @@ const home = () => {
         <img src={l30} alt="sneak peek" className={index_img}/>
         */}
 
-        {/* HOVER OVER IMAGES TO SHOW TITLE/MEDIUM/BRIEF DESCRIPTION ; CLICK TO CHANGE PAGE */}
-
-        <div onMouseOver={test} className={text_img_container}>
-          <div className={text_on_img}>text test lorem ipsum</div>
-          <img src={birth_pix1} alt="" className={img25_off} id='birth-pixels'/>
-        </div>
-        <div onMouseOver={test} className={text_img_container}>
-          <div className={text_on_img_hide} onMouseOver={test}>text test lorem ipsum</div>
-          <img src={birth_pix2} alt="" className={img25} id='birth-pixels'/>
-        </div>
-        <div className={text_img_container}>
-          <img src={birth_pix3} alt="" className={img25} id='birth-pixels'/>
-        </div>
-        <div className={text_img_container}>
-          <img src={birth_pix4} alt="" className={img25} id='birth-pixels'/>
-        </div> 
-        <div className={text_img_container}>
-          <img src={birth_pix5} alt="" className={img25} id='birth-pixels'/>
-        </div>
-        <div className={text_img_container}>
-          <img src={birth_pix6} alt="" className={img25} id='birth-pixels'/>
-        </div>
-        
-
-        <div className={text_img_container}>
-          <img src={memento1} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={memento2} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={memento3} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={memento5} alt="" className={img25}/> 
-        </div>
-        <div className={text_img_container}>
-          <img src={memento6} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={memento7} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={memento8} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={memento9} alt="" className={img25}/>
-        </div>
-
-        <div className={text_img_container}>
-          <div className={text_on_img_hide}>text test lorem ipsum</div>
-          <img src={memento11} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={memento13} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={memento15} alt="" className={img25}/>
-        </div>
-
-        <div className={text_img_container}>
-          <img src={localhost1} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={localhost2} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={localhost3} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={localhost4} alt="" className={img25}/>
-        </div>
-        <div className={text_img_container}>
-          <img src={localhost5} alt="" className={img25}/>
-        </div>
         
 
       </div>
