@@ -72,7 +72,7 @@ import exmod4 from '../images/index/exmod4.gif'
 
 
 const Index = () => {
-  var birthPixelsCN = className('img25_off', 'birth-pixels');
+  // ADD DOUBLE TAP FOR MOBILE 
 
   const [desirePathState, setDesirePathState] = useState(img25_off);
   const [localhostState, setLocalhostState] = useState(img25_off);
