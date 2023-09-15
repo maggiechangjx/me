@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { navigate } from 'gatsby'
 
+
 // styles
 // import { pageStyle } from "./style.js"
 import { 
@@ -69,10 +70,14 @@ import exmod4 from '../images/index/exmod4.gif'
 const Index = () => {
   // ADD DOUBLE TAP FOR MOBILE 
 
-  const [windowWidth, setwindowWidth] = useState(window.innerWidth);
-  //const windowWidth = window.innerWidth;
+  // const { width } = useWindowSize();
+  //const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+  
+  
   // console.log(`window width: ${windowWidth}`)
   const widthThreshold = 700;
+
+  //console.log(`window width: ${width}`)
 
   const [desirePathState, setDesirePathState] = useState(img25_off);
   const [localhostState, setLocalhostState] = useState(img25_off);
@@ -175,6 +180,10 @@ const Index = () => {
   function linkToProject(e) {
     // on click, show project page
     // the ID of the image corresponds to the page name
+
+    const windowWidth = window.innerWidth;
+
+
     if (windowWidth >= widthThreshold) {
       navigate(`/${e.target.id}`);
       // console.log(e.target.id);
