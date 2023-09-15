@@ -69,8 +69,8 @@ import exmod4 from '../images/index/exmod4.gif'
 const Index = () => {
   // ADD DOUBLE TAP FOR MOBILE 
 
-  //const [windowWidth, setwindowWidth] = useState(window.innerWidth);
-  const windowWidth = window.innerWidth;
+  const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+  //const windowWidth = window.innerWidth;
   // console.log(`window width: ${windowWidth}`)
   const widthThreshold = 700;
 
