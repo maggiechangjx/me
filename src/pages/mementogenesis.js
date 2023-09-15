@@ -1,30 +1,20 @@
 import React from 'react';
 import Layout from "../components/layout";
 import Video from "../components/video";
-import Carousel1 from "../components/mem-carousel/carousel1";
-
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import {
-   memento_img_h, 
    memento_img_h_full,
    memento_img_h_full_margins,
-   memento_img_h80,
    memento_img_h60,
-   memento_img_h55,
    memento_img_h50,
    memento_img_h33,
    memento_img_h25,
    memento_img_v,
    memento_flexbox,
    memento_flexbox_1row,
-   memento_flexitem,
    memento_flexitem_gif,
    memento_mutation_gif,
-   memento_flex_microscopy_img,
-   separation_line
+   memento_flex_microscopy_img
 } from '../style/images.module.css'
 
 import {

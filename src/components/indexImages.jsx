@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { navigate } from 'gatsby'
 
 
@@ -20,20 +20,13 @@ import birth_pix4 from '../images/index/birth_pix4.gif'
 import birth_pix5 from '../images/index/birth_pix5.gif'
 import birth_pix6 from '../images/index/birth_pix6.gif'
 
-import memento1 from '../images/index/memento1.gif'
-import memento2 from '../images/index/memento2.gif'
 import memento3 from '../images/index/memento3.gif'
-import memento4 from '../images/index/memento4.gif'
 import memento5 from '../images/index/memento5.gif'
 import memento6 from '../images/index/memento6.gif'
-import memento7 from '../images/index/memento7.png'
 import memento8 from '../images/index/memento8.png'
 import memento9 from '../images/index/memento9.png'
-import memento10 from '../images/index/memento10.png'
 import memento11 from '../images/index/memento11.png'
-import memento12 from '../images/index/memento12.png'
 import memento13 from '../images/index/memento13.png'
-import memento14 from '../images/index/memento14.png'
 import memento15 from '../images/index/memento15.png'
 
 import localhost1 from '../images/index/localhost1.gif'
@@ -41,7 +34,6 @@ import localhost2 from '../images/index/localhost2.gif'
 import localhost3 from '../images/index/localhost3.gif'
 import localhost4 from '../images/index/localhost4.gif'
 import localhost5 from '../images/index/localhost5.gif'
-import localhost6 from '../images/index/localhost6.png'
 
 import cyberfem1 from '../images/index/cyberfem1.png'
 import cyberfem2 from '../images/index/cyberfem2.png'
@@ -53,7 +45,6 @@ import desirepath4 from '../images/index/desirepath4.gif'
 import desirepath5 from '../images/index/desirepath5.gif'
 import desirepath6 from '../images/index/desirepath6.png'
 
-import variations1 from '../images/index/variations1.gif'
 import variations2 from '../images/index/variations2.gif'
 import variations3 from '../images/index/variations3.png'
 
@@ -64,7 +55,6 @@ import projected3 from '../images/index/projected3.png'
 import exmod1 from '../images/index/exmod1.gif'
 import exmod2 from '../images/index/exmod2.gif'
 import exmod3 from '../images/index/exmod3.gif'
-import exmod4 from '../images/index/exmod4.gif'
 
 
 const Index = () => {
