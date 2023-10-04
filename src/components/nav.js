@@ -96,7 +96,7 @@ const Nav = ({id, title}) => {
                   on this interface.
                   <br/><br/>
                   <a href='https://www.are.na/maggie-chang' target='_blank'>Are.na</a><br/>
-                  <a href='https://drive.google.com/file/d/13sb2Tcp0-aVuYlwepRQjWYkfqGGuG7F7/view?usp=sharing' target='_blank'>Resume</a> <br/>
+                  {/*<a href='https://drive.google.com/file/d/13sb2Tcp0-aVuYlwepRQjWYkfqGGuG7F7/view?usp=sharing' target='_blank'>Resume</a> <br/>*/}
                   maggiechangjx [at] gmail [dot] com
                </p>
             </div>
