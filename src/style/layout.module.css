@@ -5,7 +5,9 @@ html {
 
 body {
    margin: 0px;
-   background-color:rgb(238, 239, 249);
+   /*background-color:rgb(238, 239, 249); /*light blue*/
+   background-color: rgb(243, 243, 243); /*light gray*/
+   /*background-color: white;*/
 }
 
 .base_layout {
@@ -46,6 +48,10 @@ body {
       margin-right: 0px;
       margin-bottom: 0px;
       margin-top: 25vh;
+   }
+
+   .header_footer_space {
+      display: none;
    }
 
 }

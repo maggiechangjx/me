@@ -1,17 +1,21 @@
 p {
-   color:rgb(27, 36, 96);
-   line-height: 24.5px;
-   font-family: "Inter Tight", sans-serif;
+   /*color:rgb(27, 36, 96);*/
+   color: rgb(111, 111, 111);
+   line-height: 19.5px;
+   font-family: "Open Sans", sans-serif;
    font-weight: 400;
-   font-size: 15.5px;
+   font-size: 15px;
 }
+
 
 .nav {
    scroll-behavior: smooth;
    height: 99vh;
    width: 23vw;
    min-width: 23vw;
-   background-color: rgb(238, 239, 249); 
+   /*background-color: rgb(238, 239, 249); /*light blue*/
+   background-color: rgb(243, 243, 243); /*light gray*/
+   /*background-color: white;*/
    padding-top: 10px;
    padding-left: 15px;
    padding-right: 15px;
@@ -19,17 +23,24 @@ p {
    resize: horizontal;
    position: fixed;
    z-index: 50;
-   border-right: .5px solid;
-   border-color: rgba(91, 97, 142, 0.5);
-   box-shadow: -8px 0px 18px rgba(91, 97, 142, 0.5) inset;
+   /*border-right: .5px solid rgba(91, 97, 142, 0.2);*/
+   /*border: solid .25px rgba(91, 97, 142, 0.2);*/
+   box-shadow: -8px 0px 18px rgba(91, 97, 142, 0.7) inset;
    /*
    border-right-width: 2px;
    border-image: linear-gradient(45deg, rgb(104, 104, 106), rgb(238, 239, 249)) 1;
    */
 }
 
+.site_title {
+   font-family: "Inria Serif", serif;
+   font-size: 21px;
+   line-height: 37px;
+   font-weight: 400;
+}
+
 .bio {
-   border-bottom: 1px solid rgba(91, 97, 142, 0.35);
+   border-bottom: 1px solid rgba(91, 97, 142, 0.4);
 }
 
 .bio_paragraph {
@@ -66,13 +77,10 @@ ul {
 .show {
    display: block;
    /*background-image: radial-gradient(rgba(202, 209, 255, 0.6) 2%, rgba(255,255,255,0) 80%);*/
-   border-bottom: 1px solid rgba(91, 97, 142, 0.35);
+   border-bottom: 1px solid rgba(91, 97, 142, 0.4);
    margin-bottom: 15px;
 }
 
-.visible_title{
-   color: rgb(62, 0, 185);
-}
 
 .select_title { 
    border-top: 1px solid rgba(91, 97, 142, 0.35);
@@ -82,18 +90,23 @@ ul {
 
 a {
    text-decoration: none;
-   color:rgb(62, 49, 243);
-   font-family: "Inter Tight", sans-serif;
+   /* color:salmon; */
+   color: 	#95a473;
+   font-family: "Inria Serif", serif;
    font-weight: 400;
-   font-size: 16px;
+   font-size: 15.5px;
+   /*text-decoration: underline;*/
+   line-height: 15px;
 }
 
 a:hover {
-   color: rgb(236, 80, 33);
+   /*color: rgb(236, 80, 33);*/
+   color: salmon;
 }
 
 .select_title a {
-   color: rgb(245, 90, 23);
+   /*color: rgb(245, 90, 23);*/
+   color: rgb(255, 105, 88);
    font-weight: 600;
 }
 
@@ -123,7 +136,10 @@ a:hover {
 }
 
 .sub_caption {
-   color: rgb(141, 149, 239);
+   /*
+   color: rgb(141, 149, 239); */
+   color: rgb(255, 158, 129);
+   /* text-decoration: underline; */
 }
 
 @media only screen and (max-width: 500px) {
@@ -166,5 +182,22 @@ a:hover {
 
    .bio_trigger_mobile {
       display: none;
+   }
+
+   ::-webkit-scrollbar {
+      width: 11px;
+      /*(background-color:rgb(238, 239, 249);*/
+      background-color: rgb(242, 238, 238);
+   }
+
+   ::-webkit-scrollbar-track {
+      background: radial-gradient(rgb(240, 238, 238) 30%, rgb(255, 241, 232) 100%);
+      border: solid 1.25px rgba(91, 97, 142, 0.2);
+   }
+   
+   ::-webkit-scrollbar-thumb {
+      /*background: radial-gradient(rgb(240, 241, 249) 40%, rgba(91, 97, 142, 0.3) 100%);*/
+      background: radial-gradient(rgb(252, 252, 240) 30%, rgba(91, 97, 142, 0.4) 100%);
+      border-radius: 5px;
    }
 }

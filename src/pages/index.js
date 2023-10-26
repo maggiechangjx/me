@@ -15,4 +15,4 @@ const home = () => {
 
 export default home
 
-export const Head = () => <title>Maggie Jiaxu Chang</title>
+export const Head = () => <title>Maggie Chang</title>

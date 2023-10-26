@@ -20,6 +20,7 @@ import {
    github_link,
    vertical_align_links,
    sub_caption,
+   site_title
 } from '../style/nav.module.css';
 
 if (typeof window !== "undefined") {
@@ -68,14 +69,14 @@ const Nav = ({id, title}) => {
       <div className={ nav } id='nav'>
          <div className={bio}>
             <p>
-               Hey! I'm <Link to='/'>Maggie</Link>.<br/>
-               I'm a creative technologist, designer, and artist who enjoys using digital 
+               <Link to='/' className={site_title}>Maggie Chang</Link><br/>
+               I'm a creative technologist, designer, and artist using digital 
                technologies as carriers for both poetics and function through 
                interaction, generative design, metaphors, and performance. <a onClick={toggleBio} className={bio_trigger_mobile}> [...]</a>
             </p>
             <div className={bioStatus? show_extra_bio : work_item_mobile}>
                <p>
-                  Through my work, I reflect on how the ecology of humans, tools, and our 
+                  My work reflects on how the ecology of humans, tools, and 
                   environment continuously shape each other. Using frameworks of speculative design, 
                   I create alternative technological and social narratives to 
                   reimagine the possibilities for the tools that we use and the infrastructures
@@ -87,15 +88,15 @@ const Nav = ({id, title}) => {
                   I studied sculpture with a concentration
                   in <a href='https://ctc.risd.edu/' target='blank'>Computation, 
                   Technology, and Culture (CTC) </a> at the Rhode Island School 
-                  of Design. Inspired by the notion of a website being 
-                  <a href='https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/' target='blank'> 
+                  of Design. Inspired by the notion of a website being <a 
+                  href='https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/' target='blank'> 
                   "a shifting 
                   house next to a river of knowledge"</a>, I see my own website 
                   as evolving snapshots of my growing practice, as some projects 
                   speak more directly to my current inqueries while others sediment
                   on this interface.
                   <br/><br/>
-                  <a href='https://www.are.na/maggie-chang' target='_blank'>Are.na</a><br/>
+                  <a href='https://www.are.na/maggie-chang' target='_blank'>are.na</a><br/>
                   {/*<a href='https://drive.google.com/file/d/13sb2Tcp0-aVuYlwepRQjWYkfqGGuG7F7/view?usp=sharing' target='_blank'>Resume</a> <br/>*/}
                   maggiechangjx [at] gmail [dot] com
                </p>
@@ -175,74 +176,80 @@ const Nav = ({id, title}) => {
                   <Link to='/mementogenesis/'>Mementogenesis</Link>
                </div>
                <div id="mementogenesis"  className={work_item}>
-                  <p className={medium}>Exploratory worldbuilding for a speculative narrative in which human DNA becomes the 
-                  only source of storage for all data and memory</p>
+                  <p className={medium}>Exploratory visual worldbuilding using Blender, miscroscopy, and AI</p>
                   <p className={year}>2023-ongoing</p>
                   <p className={description}>
-                  As humans move through time, the accumulation of data has exceeded the capacities of existing data centers. 
-                  Recognizing that humans can no longer live apart from computers or data, humans started using their own 
-                  bodies for data storage. Human DNA has become computer memory. As DNA mutates throughout one’s 
-                  lifespan, the data stored within the it will also mutate. A daily data ritual takes place where 
-                  people sort through and reinterpret a part of the data and memories stored within their own bodies. 
-                  In this world, the rereading of history will always be an archeological act.
+                  Mementogenesis currently embodies a series of visual research stemming from a speculative narrative 
+                  in which human DNA becomes the only storage for all data and memory. It imagines a probable future where 
+                  conventional data centers proves to be too environmentally costly to maintain, while existing research 
+                  on DNA storage becomes widely adopted. Considering the social influences of the computer as it migrated 
+                  from military contexts to our homes, the narrative imagines a reality in which technology and biology 
+                  becomes increasingly entangled. 
                   <br />
+                  The current visualizations include:
                   <ul>
                      <li>
-                        <Link to={"/mementogenesis/#family_tree_scroll"} className={sub_caption}>1. Family Tree of Twins</Link>
+                        <Link to={"/mementogenesis/#family_tree_scroll"} className={sub_caption}>→Family Tree of Twins</Link>
                         <div >
                            <p className={medium}>Blender renderings and animation</p>
-                           <p className={description}>Each family unit is responsible for storing their own generational memories and a 
+                           {/* <p className={description}>Each family unit is responsible for storing their own generational memories and a 
                               portion of the social collective data. As an attempt to prevent the loss of data,
                                each family unit must give birth to twins and store a copy of the data in each twin. 
-                               Here shows a family tree of 7 generations</p>
+                              Here shows a family tree of 7 generations</p> */}
                         </div>
                      </li>
                      <li id="test"><
-                        Link to={"/mementogenesis/#module_scroll"} className={sub_caption}>2. Twin Modules</Link>
+                        Link to={"/mementogenesis/#module_scroll"} className={sub_caption}>→Twin Modules</Link>
                         <div >
                            <p className={medium}>Procreate, Adobe Illustrator</p>
-                           <p className={description}>Modular visualizations following the structure of the family tree: two base  modules pair together
-                              to create two new twin modules. </p>
                         </div>
                      </li>
                      <li>
-                        <Link to={"/mementogenesis/#microscopy_scroll"} className={sub_caption}>3. Microscopy and Mutation</Link>
+                        <Link to={"/mementogenesis/#microscopy_scroll"} className={sub_caption}>→Microscopy, Mutation, Language</Link>
                         <div >
-                           <p className={medium}>Microscopy of broken down cheek cells, image generation with Midjourney 
-                           and RunwayML</p>
-                           <p className={description}>
-                              To approximate an embodied experience of the narrative, I extracted and observed broken 
-                              down proteins and DNA inside my cheek cells. The images were captured under 400x and 1000x 
-                              magnification.
-                              <br/>
-                              Since the data stored within DNA is subject to mutate, I visualized a set of possible 
-                              mutations using select microscopy images in combination with Midjourney and 
-                              RunwayML's Frame Interpolation tool.
-                           </p>
+                           <p className={medium}>Microscopy of broken down cheek cells; image generation with Midjourney 
+                           and RunwayML; Figma, Procreate, and Blender renderings</p>
                         </div>
                      </li>
+                     {/*}
                      <li>
-                        <Link to={"/mementogenesis/#language_system_scroll"} className={sub_caption}>4. Language System</Link>
+                        <Link to={"/mementogenesis/#language_system_scroll"} className={sub_caption}>→Language System</Link>
                         <div>
                            <p className={medium}>Figma, Procreate, and Blender renderings</p>
-                           <p className={description}>
-                              A preliminary language system is made following the structure and composition of DNA. 
-                           </p>
                         </div>
                      </li>
+                     */}
                   </ul>
                   </p>
                </div>
             </li>
+            <li> 
+               <div id="aerialWitnessingT">
+                  <Link to='/aerial-witnessing/'>Aerial Witnessing</Link>
+               </div>
+               <div id="aerialWitnessing" className={work_item}>
+                  <p className={medium}>Speculative mapping</p>
+                  <p className={year}>2023</p>
+                  <p className={description}>
+                     A series of maps made in relation to <a href='https://www.theguardian.com/environment/2021/feb/08/solar-geoengineering-test-flight-plan-under-fire-over-environmental-concerns-aoe' target='blank'>
+                      a geoengineering experiment in Northern Sweden</a>. Focusing on the different perspectives 
+                      in the context of technological determinism and climate change, these comparative 
+                      maps speculate the different perspectives including the geoengineering lab, the 
+                      local indigenous population, and the air itself. This project was made in collaboration 
+                      with Miriam Lellek and <a href='https://www.matters-of-activity.de/en/' >Matters of Activity</a>.
+                  </p>
+               </div>
+            </li>
+
             <li>
                <div id="cyberfemT">
                   <Link to='/cyberfeminism-index/'>Cyberfeminism Index Panel</Link>
                </div>
-               <div id="cyberfem"  className={work_item}>
+               <div id="cyberfem" className={work_item}>
                   <p className={medium}>Performative reading and panel talk</p>
                   <p className={year}>2022</p>
                   <p className={description}>
-                     Together with my friends <a href='https://jon-chen.com/' target='blank'>Jon Chen</a>
+                     Together with <a href='https://jon-chen.com/' target='blank'>Jon Chen</a>
                      and <a href='https://vincentli.space/' target='blank'>Vincent Li</a>, 
                      we hosted a panel conversation with designer, researcher, and educator 
                      <a href='https://mindyseu.com/' target='blank'> Mindy Seu</a>,
@@ -278,7 +285,7 @@ const Nav = ({id, title}) => {
                   </p>
                </div>
             </li>
-            <li>
+            {/* <li>
                <div id="variationsT">
                   <Link to='/variations/'>Variations for One: Re</Link>
                </div>
@@ -313,6 +320,7 @@ const Nav = ({id, title}) => {
                   </p>
                </div>   
             </li>
+            */}
             <li>
                <div id="exModT">
                   <Link to='/extensions-modulations/'>Through extensions and modulations I hear my body</Link>
