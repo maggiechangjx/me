@@ -158,16 +158,18 @@ const Nav = ({id, title}) => {
                   <a href='https://github.com/maggiechangjx/language-desire-path/tree/master/src' target='blank' className={github_link}>Github</a>
                   <p className={year}>2022</p>
                   <p className={description}>
-                  localhost:8000 is a website hosted on a local Raspberry Pi that's 
-                  attached to environmental sensors detecting the 
-                  temperature, brightness, and loudness around the server. 
-                  The website's digital environment and accessible content 
-                  flickers to the changes in the physical enviroment around 
-                  its server. <br/><br/>
-                  The Raspberry Pi server lives with me, and it switches offline when
-                  I am not around to take care of it. I'm currently out of town for a 
-                  few weeks, so the site is hibernating for a while. The new address for the
-                  website will be available after I return.
+                  localhost:8000 began by asking how technology can be better 
+                  connected with the natural environment. 
+                  Hosted on a Raspberry Pi attached to sensors that 
+                  detect the temperature, brightness, and volume around it, 
+                  the website reflects these changes in real time through 
+                  its design and accessible content.           
+                  In response to the ecological impacts brought 
+                  by data centers,this project embraces shifts in locality 
+                  and encourages a more holistic view of the internet. 
+                  <br/><br/>
+                  This is the first iteration of the project, with the working server and 
+                  website built in 6-7 weeks. A new web interface is currently in development.
                   </p>
                </div>
             </li>
