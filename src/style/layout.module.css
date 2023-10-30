@@ -10,6 +10,13 @@ body {
    /*background-color: white;*/
 }
 
+figure {
+   display: block;
+   margin-left: .3vw;
+   margin-right: 0px;
+   margin-bottom: 0px;
+}
+
 .base_layout {
    display: flex;
    flex-direction: row;
@@ -39,6 +46,10 @@ body {
 */
 
 @media only screen and (max-width: 700px) {
+   figure {
+      margin-left: 0px;
+   }
+
    .base_layout {
       flex-direction: column;
    }

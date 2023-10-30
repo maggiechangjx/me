@@ -25,14 +25,29 @@
     color:rgba(56, 60, 96, 0.563);
  }
 
+ .img_caption {
+    margin-top: 5px;
+    font-size: 13px;
+ }
+
  @media only screen and (min-width: 700px) {
     .in_page_textbox {
         max-width: 59vw;
+    }
+    .text_box_h50 {
+        display: block;
+        max-width: 48.5%;
+        margin-left: auto;
+        margin-right: auto;
     }
  }
 
  @media only screen and (max-width: 700px) {
     .in_page_subtitle {
         line-height: 31px;
+    }
+    .text_box_h50 {
+        margin-left: 5px;
+        margin-right: 5px;
     }
  }

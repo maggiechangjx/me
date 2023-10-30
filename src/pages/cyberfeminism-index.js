@@ -15,13 +15,14 @@ import poster from '../images/cyberfem/poster.png'
 const cyberfemPage = () => {
    return (
      <Layout id="cyberfem" title="cyberfemT">
-      <div className={header_footer_space}></div>
+         <div className={header_footer_space}></div>
          <img src={poster} alt="event poster" className={v_img_96}/>
          <div className={section_divider_blank}></div>
          <img src={p3} alt="Mindy Seu presenting the Cyberfeminism Index" className={h_img} />
          <img src={p1} alt="event" className={h_img} />
          <img src={p4} alt="Friends" className={h_img} />
          <img src={p2} alt="Books" className={h_img} />
+         <div className={header_footer_space}></div>
       </Layout>
    )
  }

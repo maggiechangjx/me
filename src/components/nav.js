@@ -234,11 +234,13 @@ const Nav = ({id, title}) => {
                   <p className={year}>2023</p>
                   <p className={description}>
                      A series of maps made in relation to <a href='https://www.theguardian.com/environment/2021/feb/08/solar-geoengineering-test-flight-plan-under-fire-over-environmental-concerns-aoe' target='blank'>
-                      a geoengineering experiment in Northern Sweden</a>. Focusing on the different perspectives 
-                      in the context of technological determinism and climate change, these comparative 
-                      maps speculate the different perspectives including the geoengineering lab, the 
-                      local indigenous population, and the air itself. This project was made in collaboration 
-                      with Miriam Lellek and <a href='https://www.matters-of-activity.de/en/' >Matters of Activity</a>.
+                     a solar geoengineering experiment in Northern Sweden</a>. Focusing on the different perspectives 
+                     present in the context of technological determinism and climate change, these comparative 
+                     maps speculate the different points of views involved in conducting and 
+                     protesting against the experiment, including that of the geoengineering lab, the 
+                     local indigenous population, and the air itself. This project was made in collaboration 
+                     with Miriam Lellek and <a href='https://www.matters-of-activity.de/en/' >Matters of Activity</a>, 
+                     as one component of a larger exploration and exhibition around the topic of air.
                   </p>
                </div>
             </li>

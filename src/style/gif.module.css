@@ -14,7 +14,7 @@
 
 .gif_container {
    display: flex;
-   width: 97.5%;
+   width: 97%;
    max-width: 100%;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -47,9 +47,12 @@
 }
 
 .full_gif {
-   width: 100%;
-   margin-top: 5px;
+   display: block;
+   width: 97%;
+   margin-top: 12px;
    margin-bottom: 5px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 @media only screen and (max-width: 600px) {

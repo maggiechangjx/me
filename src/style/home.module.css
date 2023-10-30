@@ -31,7 +31,9 @@
 .text_on_img {
   position: absolute;
   /*color: rgb(64, 0, 255);*/
-  color: rgb(255, 86, 67);
+  /*color: rgb(255, 86, 67);*/
+  color: black;
+  color: #4d5f00;
   background-color: radial-gradient(white, rgba(255,255,255,0));
   z-index: 2;
   font-family: "Inter Tight", sans-serif;
