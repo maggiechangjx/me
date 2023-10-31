@@ -16,6 +16,13 @@
     color: rgb(238, 239, 249);
 }
 
+.localhost_img_desc {
+    margin-left: 15vw;
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+
 .memento_subtitle {
     position: absolute;
     bottom: 0;
@@ -69,5 +76,8 @@
     .img_caption {
         margin-left: 7px;
         margin-right: 7px;
+    }
+    .localhost_img_desc {
+        margin-left: 10px;
     }
  }
