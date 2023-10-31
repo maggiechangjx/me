@@ -9,8 +9,7 @@
 }
 
 .in_page_text {
-    margin-left: 1.25vw;
-    margin-right: 1.25vw;
+    margin-top: 0px;
 }
 
 .memento_narrative {
@@ -30,6 +29,7 @@
     font-size: 13px;
  }
 
+
  @media only screen and (min-width: 700px) {
     .in_page_textbox {
         max-width: 59vw;
@@ -40,14 +40,34 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .two_col_text {
+        column-count: 2;
+        column-gap: 15px;
+        margin-left: 1.25vw;
+        margin-right: 1.25vw;
+        padding-top: 0px;
+    }
  }
 
  @media only screen and (max-width: 700px) {
     .in_page_subtitle {
         line-height: 31px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .in_page_text {
+        margin-left: 15px;
+        margin-right: 15px;
     }
     .text_box_h50 {
         margin-left: 5px;
         margin-right: 5px;
+    }
+    .two_col_text {
+        column-count: 1;
+    }
+    .img_caption {
+        margin-left: 7px;
+        margin-right: 7px;
     }
  }

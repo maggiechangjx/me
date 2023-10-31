@@ -18,7 +18,8 @@ import {
 import { 
   in_page_text,
   img_caption,
-  text_box_h50 } from "../style/text.module.css"
+  text_box_h50,
+  two_col_text } from "../style/text.module.css"
 
 import map1 from '../images/aerial-witnessing/map1.jpg'
 import map2 from '../images/aerial-witnessing/map2.jpg'
@@ -57,10 +58,10 @@ const pixelsPage = () => {
           vs nonhuman agents within that environment.
         </p>
         */}
-        <div className={memento_flexbox_1row}>
-          <div className={text_box_h50}>
-            <p>
-            The ideation for the project began with a site visit to the AIDA cloud 
+
+        <div className={two_col_text}>
+          <p className={in_page_text}>
+          The ideation for the project began with a site visit to the AIDA cloud 
             chamber at the Karlsruhe Institute of Technology, 
             embodied explorations of collecting samples of air, readings, and discussions around 
             what it means to witness air. Considering air as a substance that 
@@ -76,11 +77,7 @@ const pixelsPage = () => {
             stratosphere to scatter the sunlight hitting the Earth. The experiment was called off 
             after it was met by protests from the indigenous population of Kiruna and 
             environmental groups.
-            </p>
-            
-          </div>
-          <div className={text_box_h50}>
-            <p>
+            <br/><br/>
             It is difficult to reframe from anthropocentric perspectives as large 
             scale climate engineering becomes a possibility. As the environment can become discretized 
             and decontextualized into data quantifiable by machines and algorithms, we cannot 
@@ -90,8 +87,7 @@ const pixelsPage = () => {
             representation of power, dictating the lens through which the land is perceived, 
             we made comparative maps of the same location speculating the perspective of the scientists, 
             the local population, and the air itself.
-            </p>
-          </div>
+          </p>
         </div>
 
         <div className={memento_flexbox_1row}>

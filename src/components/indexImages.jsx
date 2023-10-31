@@ -56,6 +56,10 @@ import exmod1 from '../images/index/exmod1.gif'
 import exmod2 from '../images/index/exmod2.gif'
 import exmod3 from '../images/index/exmod3.gif'
 
+import aerial1 from '../images/index/aerial_witness1.jpg'
+import aerial2 from '../images/index/aerial_witness2.jpeg'
+
+
 
 const Index = () => {
   // ADD DOUBLE TAP FOR MOBILE 
@@ -77,6 +81,7 @@ const Index = () => {
   const [variationsState, setVariationsState] = useState(img25_off);
   const [exModState, setExModState] = useState(img25_off);
   const [projectedState, setProjectedState] = useState(img25_off);
+  const [aerialState, setAerialState] = useState(img25_off);
 
   const [desirePathTextState, setDesirePathTextState] = useState(text_on_img_hide);
   const [localhostTextState, setLocalhostTextState] = useState(text_on_img_hide);
@@ -86,6 +91,7 @@ const Index = () => {
   const [variationsTextState, setVariationsTextState] = useState(text_on_img_hide);
   const [exModTextState, setExModTextState] = useState(text_on_img_hide);
   const [projectedTextState, setProjectedTextState] = useState(text_on_img_hide);
+  const [aerialTextState, setAerialTextState] = useState(text_on_img_hide);
 
   function activateImgOnHover(e) {
     // light up images and show text when mouse overs over certain project
@@ -123,6 +129,10 @@ const Index = () => {
       setCyberfemState(img25);
       setCyberfemTextState(text_on_img);
     }
+    else if (e.target.id === 'aerial-witnessing') {
+      setAerialState(img25);
+      setAerialTextState(text_on_img);
+    }
     else { console.log('homepage image selection issue'); }
   }
 
@@ -158,6 +168,10 @@ const Index = () => {
     else if (e.target.id === 'cyberfeminism-index') {
       setCyberfemState(img25_off);
       setCyberfemTextState(text_on_img_hide);
+    }
+    else if (e.target.id === 'aerial-witnessing') {
+      setAerialState(img25_off);
+      setAerialTextState(text_on_img_hide);
     }
   }
 
@@ -257,13 +271,13 @@ const Index = () => {
 
         <div onMouseOver={activateImgOnHover} onMouseLeave={deactivateImgOnHover} 
         onClick={(linkToProject)} className={text_img_container}>
-          <img src={variations2} alt="" className={variationsState} id='variations'/>
+          <img src={aerial1} alt="" className={aerialState} id='aerial-witnessing'/>
         </div>
         <div onMouseOver={activateImgOnHover} onMouseLeave={deactivateImgOnHover} 
         onClick={(linkToProject)} className={text_img_container}>
-          <div className={variationsTextState}>
-            Variations for One: Re<br/>
-            <div className={text_descriptions}>Experimental sound and video<br/>2020<br/></div>
+          <div className={aerialTextState}>
+            Aerial Witnessing<br/>
+            <div className={text_descriptions}>Speculative cartography<br/>2023<br/></div>
           </div>
           <img src={desirepath6} alt="" className={desirePathState} id='desire-paths'/>
         </div>
@@ -363,7 +377,7 @@ const Index = () => {
             Projected Land, Projected Being<br/>
             <div className={text_descriptions}>Performance<br/>2019<br/></div>
           </div>
-          <img src={variations3} alt="" className={variationsState} id='variations'/>
+          <img src={aerial2} alt="" className={aerialState} id='aerial-witnessing'/>
         </div>
         <div onMouseOver={activateImgOnHover} onMouseLeave={deactivateImgOnHover} 
         onClick={(linkToProject)} className={text_img_container}>
