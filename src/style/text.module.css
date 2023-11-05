@@ -40,6 +40,7 @@
  @media only screen and (min-width: 700px) {
     .in_page_textbox {
         max-width: 59vw;
+        margin-left: 1.4vw;
     }
     .text_box_h50 {
         display: block;
