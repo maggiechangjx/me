@@ -169,7 +169,7 @@ const Nav = ({id, title}) => {
                   and encourages a more holistic view of the internet. 
                   <br/><br/>
                   This is the first iteration of the project, with the working server and 
-                  website built in 6-7 weeks. A new web interface is currently in development.
+                  website built in 6 weeks. A new web interface is currently in development.
                   </p>
                </div>
             </li>
